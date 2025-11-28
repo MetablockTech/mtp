@@ -29,6 +29,8 @@ export class RedisSingleton {
  RedisSingleton.instance = new Redis({
   host: "redis-14483.c245.us-east-1-3.ec2.cloud.redislabs.com",
   port: 14483,
+  password: "93Xw87sPxoYUMp9fcqChX8lrtbrjTV9o", // <--- MUST
+  username: "default",
   db: 0,
   maxRetriesPerRequest: 3,
   enableReadyCheck: true,
